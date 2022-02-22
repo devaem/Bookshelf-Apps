@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(234, 255, 217);
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 0;
+}
+
+.navbar {
+    font-size: 35px;
+    padding-left: 20px;
+    color: darkolivegreen;
+}
+
+.my-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+    padding: 25px;
+}
+
+.content {
+    font-family: 'Poppins', serif;
+    width: 100%;
+    display: flex;
+    margin-top: 55px;
+    box-sizing: border-box;
+}
+
+.col-1 {
+    padding: 20px;
+    width: 100% !important;
+}
+
+
+.user-information {
+    position: relative;
+}
+
+.user-information .user-img img{
+    width: 80px !important;
+    border-radius: 50%;
+    top: 0;
+    left: 11%;
+    background: lightgoldenrodyellow;
+    padding: 4px;
+    margin-top: -40px !important;
+    position: absolute;
+}
+
+.user-information .user-name {
+    padding-top: 25px;
+    color: darkolivegreen;
+    font-size: 26px;
+}
+
+.user-information .user-bio {
+    color: orange;
+    font-size: 12px;
+}
+
+.user-information ul {
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.user-information ul li {
+    list-style: none;
+    margin: 10px;
+    width: 50%;
+}
+
+.user-information ul li p {
+    text-transform: uppercase;
+    font-family: 'Poppins', serif;
+    font-size: 20px;
+    color: orange;
+    font-weight: bold;
+}
+
+.user-information ul li h3 {
+    color: darkolivegreen;
+    font-size: 25px;
+}
+
+/*main*/
+main {
+    font-family: 'Poppins', serif;
+}
+
+/*input buku*/
+.wrapper {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+    width: 100%;
+}
+  
+.input_section > h2 {
+    text-align: center;
+    color: darkolivegreen;
+}
+  
+.input_section > form > .input {
+    margin: 8px 0;
+}
+  
+.input_section > form > button {
+    background-color: darkolivegreen;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+  
+.input_section > form > button > span {
+    font-weight: bold;
+}
+  
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+  
+.input_section > form > .input > label {
+    color: darkolivegreen;
+    font-weight: bold;
+}
+  
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+  
+.input_section > form > .input_inline > label {
+    color: darkolivegreen;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/*wrapper-search*/
+.wrapper-search {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.search_section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.form_search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.form_search > h2 {
+    color: darkolivegreen;
+}
+  
+.form_search > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+  
+.form_search > form > label {
+    display: flex;
+    align-items: center;
+    color: darkolivegreen;
+    font-weight: bold;
+}
+  
+.form_search > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+  
+.form_search > form > button {
+    background-color: darkolivegreen;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.search_section > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+  
+.search_section > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+/*bookshelf*/
+.wrapper-incomplete {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.wrapper-incomplete .book_shelf h2 {
+    padding-left: 30px;
+}
+
+.wrapper-complete {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.wrapper-complete .book_shelf h2 {
+    padding-left: 30px;
+}
+
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+    width: 100%;
+}
+  
+.book_shelf > h2 {
+    color: darkolivegreen;
+}
+  
+.book_shelf > .book_list {
+    padding: 16px;
+}
+  
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+  
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+    color: white;
+}
+  
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+
+/*search*/
+.search_section > .book_list > .book_item > .action button {
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    float: right;
+    margin-top: -100px;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.search_section > .book_list > .book_item > .action > .red {
+    background-color: red;
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+    background-color: rgb(17, 87, 17);
+    color: white;
+    border: 2px solid green;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green:hover {
+    background-color: green;
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .orange {
+    background-color: rgb(212, 145, 20);
+    color: white;
+    border: 2px solid orange;
+}
+
+.book_shelf > .book_list > .book_item > .action > .orange:hover {
+    background-color: orange;
+    color: white;
+}
+  
+.book_shelf > .book_list > .book_item > .action > .red {
+    background-color: brown;
+    color: white;
+    border: 2px solid red;
+}
+  
+.book_shelf > .book_list > .book_item > .action > .red:hover {
+    background-color: red;
+    color: white;
+}
+
+.input_section {
+    background-color:  rgb(234, 255, 217);
+    color: darkolivegreen;
+}
+
+.search_section {
+    background-color: rgb(234, 255, 217);
+    color: darkolivegreen;
+}
+  
+.book_shelf {
+    background-color: rgb(234, 255, 217);
+    color: darkolivegreen;
+}
+
+.search_section #searchBookList .book_item {
+    background-color: #fb9300;
+    color: beige;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
+}
+  
+.search_section #searchBookList .complete {
+    background-color: orange;
+    color: beige;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
+}
+  
+.book_shelf #incompleteBookshelfList .book_item {
+    background-color: #608360;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
+}
+  
+.book_shelf #completeBookshelfList .book_item {
+    background-color: #357C3C;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
+}
